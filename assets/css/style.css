@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
-/* ------------------------------------------Colours */
+/*--------------------------------------------Colors*/
 
 .bg-color-name-title {
     background-color: #676767;
@@ -12,6 +12,10 @@
 
 .bg-color-personal-info {
     background-color: #f4f4f4;
+}
+
+.bg-color-work-history {
+    background-color: #9b59b6;
 }
 
 .ui-menu-color-home {
@@ -30,9 +34,12 @@
     background-color: #525252;
 }
 
-/* ------------------------------------------Special paddings/margins/text */
+/* ----------------------------------------Special paddings/margins/text */
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     margin: 0;
 }
 
@@ -60,6 +67,7 @@ h1, h2, h3, h4 {
     float: none;
 }
 
+.history-heading,
 .section-heading {
     font-family: "Exo", sans-serif;
     font-weight: 300;
@@ -67,7 +75,7 @@ h1, h2, h3, h4 {
     margin-bottom: 40px;
 }
 
-/* ------------------------------------------Heading */
+/*--------------------------------------------Heading*/
 
 header {
     margin: 0;
@@ -78,14 +86,14 @@ header {
 }
 
 .logo {
-   background: url("../images/david.jpg");
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   min-height: 360px;
-   transition: all .5s ease-in-out;
-   -moz-transition: all .5s ease-in-out;
-   -webkit-transition: all .5s ease-in-out; 
+    background: url("../images/david.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 360px;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
 }
 
 .name {
@@ -93,7 +101,7 @@ header {
     font-weight: 100;
     font-size: 46px;
     margin-top: 50px;
-    color: #fff
+    color: #fff;
 }
 
 .title {
@@ -113,13 +121,13 @@ header {
     font-size: 0;
 }
 
-#nav {
-    margin: 0;
-}
-
 #nav li {
     font-size: 14px;
     padding: 0;
+}
+
+#nav {
+    margin: 0;
 }
 
 .menuitem {
@@ -153,14 +161,14 @@ header {
     letter-spacing: 2px;
 }
 
-/* ------------------------------------------Hover.css */
+/*--------------------------------------------Hover.css*/
 
-.hvr-sweep-to-bottom::before {
+.hvr-sweep-to-bottom:before {
     background: rgba(0, 0, 0, 0.2);
     height: 120px;
 }
 
-/* ------------------------------------------Footer */
+/* ----------------------------------------Footer */
 
 footer {
     background-color: #525252;
@@ -212,7 +220,7 @@ footer {
     padding: 20px;
 }
 
-/* ------------------------------------------Three Reasons */
+/* ----------------------------------------Three Reasons */
 
 .three-reasons-icon {
     font-size: 26px;
@@ -223,7 +231,7 @@ footer {
     margin-bottom: 15px;
 }
 
-/* ------------------------------------------Personal Info */
+/* ----------------------------------------Personal Info */
 
 .personal-info-item {
     margin-bottom: 20px;
@@ -231,7 +239,7 @@ footer {
     clear: both;
 }
 
-.personal-info-item key,
+.personal-info-item .key,
 .personal-info-item .value {
     padding-right: 8px;
     display: inline-block;
@@ -258,7 +266,7 @@ footer {
     width: 60%;
 }
 
-/* ------------------------------------------Skills */
+/* ----------------------------------------Skills */
 
 .progress {
     position: relative;
@@ -277,4 +285,52 @@ footer {
 
 .progress-section {
     margin: 40px 20px;
+}
+
+/* ----------------------------------------Work History */
+
+.history-heading {
+    color: #fafafa;
+    margin-bottom: 50px;
+}
+
+.timeline-item {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    color: #fafafa;
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: #fafafa;
+}
+
+.history-items {
+    margin-bottom: 30px;
 }
